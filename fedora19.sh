@@ -103,6 +103,8 @@ yum -y install $VBOX $JAVA $DROPBOX $FONTS $KM_SUPPORT $NET $SSH $EDITORS $GIT $
 
 yum -y update
 
+yum -y groupinstall "Fedora Eclipse"
+
 systemctl enable sshd.service
 systemctl start sshd.service
 
